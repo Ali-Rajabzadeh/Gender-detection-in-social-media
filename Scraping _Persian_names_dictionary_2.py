@@ -23,6 +23,7 @@ for i in range(1, 53): # I found maximum pages in website and it was 53
             names.append(name.find("a").get_text(strip=True))
 
 name_dict["Boy"] = names
+print("The dictionary of boys' names was retrieved.")
 
 
 names = []
@@ -37,9 +38,12 @@ for i in range(1, 53):
             names.append(name.find("a").get_text(strip=True))
 
 name_dict["Girl"] = names
+print("The dictionary of girls' names was retrieved.")
 
 # =================================================================================================
 ## saving dictionary
 
 with open('name_dict_website_2.pkl', "wb") as file:
     pickle.dump(name_dict, file)
+
+print("The data has been fully fetched and stored.")

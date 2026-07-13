@@ -54,3 +54,5 @@ driver.quit()
 
 with open('name_dict_website_1.pkl', "wb") as file:
     pickle.dump(name_dict, file)
+
+print("The data has been fully fetched and stored.")
